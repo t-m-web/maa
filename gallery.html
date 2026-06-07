@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Maa Computer</title>
+  <meta name="description" content="View the gallery at Maa Computer showcasing shop interior, customer service, printing work, and more." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Maa Computer</a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="online-services.html">Online Services</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-controls">
+        <button class="toggle-mode" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open mobile menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero-gallery">
+      <div class="container hero-copy hero-copy-gallery">
+        <span class="eyebrow">Visual Showcase</span>
+        <h1>Gallery of Our Service Center</h1>
+        <p>Explore the shop environment, customer support, printing work, and digital assistance in a modern visual gallery.</p>
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <div class="container">
+        <div class="section-heading">
+          <span>Gallery Categories</span>
+          <h2>Discover Our Space and Services</h2>
+        </div>
+        <div class="filter-actions">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="interior">Shop Interior</button>
+          <button class="filter-btn" data-filter="service">Customer Service</button>
+          <button class="filter-btn" data-filter="printing">Printing Work</button>
+          <button class="filter-btn" data-filter="passport">Passport Services</button>
+          <button class="filter-btn" data-filter="digital">Digital Services</button>
+        </div>
+        <div class="gallery-grid" id="galleryGrid">
+          <article class="gallery-item glass-card" data-category="interior" data-title="Shop Interior">
+            <div class="gallery-thumb interior"></div>
+            <h3>Shop Interior</h3>
+          </article>
+          <article class="gallery-item glass-card" data-category="service" data-title="Customer Service">
+            <div class="gallery-thumb service"></div>
+            <h3>Customer Service</h3>
+          </article>
+          <article class="gallery-item glass-card" data-category="printing" data-title="Printing Work">
+            <div class="gallery-thumb printing"></div>
+            <h3>Printing Work</h3>
+          </article>
+          <article class="gallery-item glass-card" data-category="passport" data-title="Passport Services">
+            <div class="gallery-thumb passport"></div>
+            <h3>Passport Services</h3>
+          </article>
+          <article class="gallery-item glass-card" data-category="digital" data-title="Digital Services">
+            <div class="gallery-thumb digital"></div>
+            <h3>Digital Services</h3>
+          </article>
+          <article class="gallery-item glass-card" data-category="service" data-title="Framing & Photos">
+            <div class="gallery-thumb framing"></div>
+            <h3>Photo Framing</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <div class="lightbox-content" role="dialog" aria-modal="true">
+        <button class="close-lightbox" id="closeLightbox" aria-label="Close image preview">×</button>
+        <div class="lightbox-image"></div>
+        <p class="lightbox-title"></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Maa Computer</h3>
+        <p>Professional printing, online applications, passport services, and mobile banking support.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li>Printing</li>
+          <li>Photocopy</li>
+          <li>Online Applications</li>
+          <li>Passport Services</li>
+          <li>Mobile Banking</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Maa Computer. All Rights Reserved.</div>
+  </footer>
+  <button class="back-top" id="backTop" aria-label="Scroll back to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
